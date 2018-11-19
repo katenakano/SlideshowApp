@@ -116,12 +116,16 @@ class ViewController: UIViewController {
        //}
     }
     
+    @IBOutlet weak var button: UIButton!
+    
     @IBAction func stopSlide(_ sender: Any) {
         
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             nextSlide.isEnabled = false
             returnSlide.isEnabled = false
+            
+    button.setTitle("停止", for: .normal) // ボタンのタイトル
             
         }else{
             if self.timer != nil {
@@ -131,6 +135,7 @@ class ViewController: UIViewController {
                 nextSlide.isEnabled = true
                 returnSlide.isEnabled = true
             }
+            button.setTitle("再生", for: .normal) // ボタンのタイトル
         }
         
      
@@ -139,6 +144,7 @@ class ViewController: UIViewController {
     
     @IBAction func onTapImage(_ sender: Any) {
         performSegue(withIdentifier: "result", sender: nil)
+        self.timer.invalidate()   // 現在のタイマーを破棄する
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

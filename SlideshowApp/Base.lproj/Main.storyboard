@@ -67,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="BxV-1x-iMJ" id="M2c-gC-l2a"/>
                         <outlet property="imageView" destination="cZc-6M-ufS" id="PVb-xg-yOE"/>
                         <outlet property="nextSlide" destination="ptk-kH-flS" id="9gt-9m-Qaq"/>
                         <outlet property="returnSlide" destination="43D-UM-hpA" id="fAx-ig-7tp"/>
