@@ -39,15 +39,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43D-UM-hpA">
-                                        <rect key="frame" x="101" y="0.0" width="31" height="30"/>
+                                        <rect key="frame" x="118.5" y="0.0" width="31" height="30"/>
                                         <state key="normal" title="戻る"/>
                                         <connections>
                                             <action selector="returnSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eo5-xR-YRc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxV-1x-iMJ">
-                                        <rect key="frame" x="202" y="0.0" width="66" height="30"/>
-                                        <state key="normal" title="再生/停止"/>
+                                        <rect key="frame" x="237" y="0.0" width="31" height="30"/>
+                                        <state key="normal" title="再生"/>
                                         <connections>
                                             <action selector="stopSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBA-oH-7HW"/>
                                         </connections>

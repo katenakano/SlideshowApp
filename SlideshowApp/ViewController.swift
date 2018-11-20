@@ -145,6 +145,12 @@ class ViewController: UIViewController {
     @IBAction func onTapImage(_ sender: Any) {
         performSegue(withIdentifier: "result", sender: nil)
         self.timer.invalidate()   // 現在のタイマーを破棄する
+        self.timer = nil
+        
+       nextSlide.isEnabled = true
+       returnSlide.isEnabled = true
+        
+       button.setTitle("再生", for: .normal) // ボタンのタイトル
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
